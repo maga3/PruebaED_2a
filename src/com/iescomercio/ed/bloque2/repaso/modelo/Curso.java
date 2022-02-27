@@ -7,9 +7,15 @@ public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/**
+	 * This method deletes an alumn based on their dni, if the dni is not correct it
+	 * throws an exception
+	 * 
+	 * @author Martin Ruiz
+	 * @param Dni an id for each people, string 8 numbers and a letter at the end.
+	 * @throws Exception
+	 * @version 1.0
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
