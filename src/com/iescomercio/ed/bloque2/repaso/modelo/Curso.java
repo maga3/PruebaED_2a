@@ -13,7 +13,7 @@ public class Curso {
 	 * 
 	 * @author Martin Ruiz
 	 * @param Dni an id for each people, string 8 numbers and a letter at the end.
-	 * @throws Exception
+	 * @throws Exception, when dni length is not 9.
 	 * @version 1.0
 	 */
 	public void eliminarAlumno(String dni) throws Exception {
@@ -24,9 +24,12 @@ public class Curso {
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	/** 
+	 * This method adds an alumn.
+	 * @author Martin Ruiz
+	 * @param Persona p, from class Persona.
+	 * @version 1.0
+	 */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
