@@ -29,6 +29,7 @@ public class Curso {
 	 * 
 	 * @author Martin Ruiz
 	 * @param Persona p, from class Persona.
+	 * @see Persona
 	 * @version 1.0
 	 */
 	public void aniadirAlumno(Persona p) {
@@ -55,14 +56,16 @@ public class Curso {
 	}
 
 	/**
-	 * Constructor for class Curso, it initializes listaAlumnos.
+	 * Constructor for class Curso, it initializes listaAlumnos list of class Persona.
+	 * @see Persona
 	 */
 	public Curso() {
 		listaAlumnos = new ArrayList<Persona>();
 	}
 
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * This method counts as Integer type for the number of alumns in the list.
+	 * @return Integer, total number of alumns in the list.
 	 */
 	public Integer numeroAlumnos() {
 		return listaAlumnos.size();
