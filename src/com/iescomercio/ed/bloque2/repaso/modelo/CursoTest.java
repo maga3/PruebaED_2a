@@ -58,4 +58,17 @@ class CursoTest {
 		Curso c1 = new Curso();
 		assertEquals(0, c1.numeroAlumnos());
 	}
+	
+	@Test
+	void testNumeroAlumnos() throws Exception {
+		assertEquals(3, c.numeroAlumnos());
+		c.eliminarAlumno("71349725E");
+		assertEquals(2, c.numeroAlumnos());
+		c.eliminarAlumno("71349725A");
+		assertEquals(1, c.numeroAlumnos());
+		c.aniadirAlumno(new Persona("71349722Q", "asapy", "ruty"));
+		assertEquals(2, c.numeroAlumnos());
+		c.aniadirAlumno(new Persona("23456789D", "aspy", "tuty"));
+		assertEquals(3,	c.numeroAlumnos());
+	}
 }
