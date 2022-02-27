@@ -45,4 +45,12 @@ class CursoTest {
 		c.aniadirAlumno(new Persona("71349745E", "m1artin", "Ruiz"));
 		assertEquals(antesDeCambiar+2, c.numeroAlumnos());
 	}
+	
+	@Test
+	void testEstaRegistrado() {
+		assertTrue(c.estaRegistrado("71349725E"));
+		assertTrue(c.estaRegistrado("71349725A"));
+		assertFalse(c.estaRegistrado("71349752S"));
+		assertFalse(c.estaRegistrado("71349752M"));
+	}
 }
