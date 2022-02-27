@@ -40,7 +40,7 @@ public class Curso {
 	 * This method checks if an alumn is already registered in the list of alumns.
 	 * 
 	 * @author Martin Ruiz
-	 * @param dni
+	 * @param String dni, a String composed of 8 numbers and one letter in the last posistion(8).
 	 * @return True if exists in the alumn list, false otherwise.
 	 */
 	public Boolean estaRegistrado(String dni) {
