@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.iescomercio.ed.bloque2.repaso.app"},{"l":"com.iescomercio.ed.bloque2.repaso.modelo"}];updateSearchResults();
